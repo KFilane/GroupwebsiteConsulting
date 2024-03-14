@@ -242,7 +242,7 @@ p {
       /* Style the link on hover */
       a:hover {
           background-color: #555; /
-          color: white; 
+         
       }
   
       /* Style the image inside the link */
@@ -848,6 +848,33 @@ footer {
       left: 0;
     }
   }
+  /* CSS for Team Members Section */
+
+#team-members {
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 30px; /* Adjust margin between team members */
+}
+
+.team-member img {
+  width: 250px; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+  border: 2px solid #ccc; /* Add a border around the image */
+}
+
+.team-member h3 {
+  margin-top: 20px; /* Adjust spacing */
+}
+
+.team-member p {
+  font-style: italic;
+  color: #666;
+}
+
 
 
 
