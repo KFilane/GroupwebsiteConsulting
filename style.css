@@ -175,13 +175,13 @@ p {
   }
   
   .service {
-    background-color: #cfdbdb; /* Light blue for service boxes */
+    background-color: #cfdbdb; 
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
     transition: transform 0.3s;
-    overflow: hidden; /* Prevents the image from overflowing outside the container */
+    overflow: hidden; 
   }
   
   .service:hover {
@@ -192,27 +192,27 @@ p {
     max-width: 100%;
     border-radius: 5px;
     margin-bottom: 15px;
-    transition: transform 0.3s; /* Add transition for smooth zoom effect */
+    transition: transform 0.3s; 
   }
   
   .service img:hover {
-    transform: scale(1.1); /* Zoom in by 10% when image is hovered over */
+    transform: scale(1.1); 
   }
   
   .service h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #d4e7dc; /* Dark blue for service headings */
+    color: #d4e7dc; 
   }
   
   .service p {
-    color: #d3e9cf; /* Dark blue for service text */
+    color: #d3e9cf; 
     font-size: 1rem;
     margin-bottom: 15px;
   }
   
   .service a {
-    background-color: #1abc9c; /* Dark turquoise for buttons */
+    background-color: #1abc9c; 
     color: #fff;
     padding: 8px 20px;
     text-decoration: none;
@@ -851,23 +851,23 @@ footer {
   /* CSS for Team Members Section */
 
 #team-members {
-  padding: 50px 0; /* Adjust padding as needed */
+  padding: 50px 0; 
 }
 
 .team-member {
   text-align: center;
-  margin-bottom: 30px; /* Adjust margin between team members */
+  margin-bottom: 30px; 
 }
 
 .team-member img {
-  width: 250px; /* Adjust image width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Make the image circular */
-  border: 2px solid #ccc; /* Add a border around the image */
+  width: 250px; 
+  height: auto; 
+  border-radius: 50%; 
+  border: 2px solid #ccc; 
 }
 
 .team-member h3 {
-  margin-top: 20px; /* Adjust spacing */
+  margin-top: 20px; /
 }
 
 .team-member p {
