@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
 
+
   </head>
   
   <header>
@@ -38,49 +39,10 @@
     <div id="cyberSecurity" class="tabcontent">
         <div class="service-container">
             <div class="service">
-                <a href="software.html">
-                    <img src="SOFEN.jpg" alt="Software Engineers">
+                <a href="cyber.html">
+                    <img src="cybersecurity.jpg" alt="Software Engineers">
                     <h3>CYBER SECURITY</h3>
                     <p>Our team of skilled software engineers specializes in developing custom solutions tailored to your specific requirements.</p>
-                </a>
-            </div>
-        </div>
-      
-    </div>
-    
-    <div id="networkEngineers" class="tabcontent">
-        <div class="service-container">
-            <div class="service">
-                <a href="cyber.html">
-                    <img src="cybersecurity.jpg" alt="Cyber Security Specialists">
-                    <h3>NETWORK ENGINEERS</h3>
-                    <p>Protect your digital assets with our advanced cybersecurity services. Our experienced security engineers conduct thorough assessments and implement robust defenses.</p>
-                </a>
-            </div>
-        </div>
-
-    </div>
-    
-    <div id="technicalSupport" class="tabcontent">
-        <div class="service-container">
-            <div class="service">
-                <a href="technical.html">
-                    <img src="technicalsupport.jpg" alt="Technical Support">
-                    <h3>TECHNICAL SUPPORT</h3>
-                    <p>Get technical support from our experts. We provide assistance to ensure smooth operation and resolution of technical issues.</p>
-                </a>
-            </div>
-        </div>
-     
-    </div>
-    
-    <div id="dataAnalyst" class="tabcontent">
-        <div class="service-container">
-            <div class="service">
-                <a href="data.html">
-                    <img src="dataanalyst.jpg" alt="Data Analysts">
-                    <h3>DATA ANALYST</h3>
-                    <p>Unlock insights from your data with our skilled data analysts. We analyze and interpret data to help you make informed decisions.</p>
                 </a>
             </div>
             <form action="submit_cyber_form.php" method="post">
@@ -91,15 +53,70 @@
         </div>
       
     </div>
+    
+    <div id="networkEngineers" class="tabcontent">
+        <div class="service-container">
+            <div class="service">
+                <a href="engineer.html">
+                    <img src="software.jpg" alt="Cyber Security Specialists">
+                    <h3>NETWORK ENGINEERS</h3>
+                    <p>Protect your digital assets with our advanced cybersecurity services. Our experienced security engineers conduct thorough assessments and implement robust defenses.</p>
+                </a>
+            </div>
+            <form action="submit_engineer_form.php" method="post">
+                <label for="engineerInfo">Tell us about your engineer needs:</label>
+                <textarea id="cyberInfo" name="cyberInfo" rows="4" cols="50"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
 
+    </div>
+    
+    <div id="technicalSupport" class="tabcontent">
+        <div class="service-container">
+            <div class="service">
+                <a href="technical.html">
+                    <img src="tech.jpg" alt="Technical Support">
+                    <h3>TECHNICAL SUPPORT</h3>
+                    <p>Get technical support from our experts. We provide assistance to ensure smooth operation and resolution of technical issues.</p>
+                </a>
+            </div>
+            <form action="submit_technical_form.php" method="post">
+                <label for="technicalInfo">Tell us about your technical needs:</label>
+                <textarea id="technicalInfo" name="cyberInfo" rows="4" cols="50"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+     
+    </div>
+  
+    
+    <div id="dataAnalyst" class="tabcontent">
+        <div class="service-container">
+            <div class="service">
+                <a href="data.html">
+                    <img src="DATACSI.png" alt="Data Analysts">
+                    <h3>DATA ANALYST</h3>
+                    <p>Unlock insights from your data with our skilled data analysts. We analyze and interpret data to help you make informed decisions.</p>
+                </a>
+            </div>
+            <form action="submit_data_form.php" method="post">
+                <label for="dataInfo">Tell us about your data insights needs:</label>
+                <textarea id="dataInfo" name="dataInfo" rows="4" cols="50"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+      
+    </div>
 
 <script src="javascript.js"></script>
 </body>
 <footer>
     <div class="social-media">
-        <a href="#" target="_blank"><img src="icons8-facebook-48.png" alt="Facebook"></a>
-        <a href="#" target="_blank"><img src="icons8-whatsapp-48.png" alt="Whatsapp"></a>
-        <a href="#" target="_blank"><img src="icons8-linkedin-48.png" alt="LinkedIn"></a>
+        <a href="https://facebook.com" target="_blank"><img src="download.png" alt="Facebook"></a>
+        <a href="https://whatsapp.com" target="_blank"><img src="icone-whatsapp.webp" alt="Whatsapp"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="linkedIn.png" alt="LinkedIn"></a>
+     
      
     </div>
     <p>Contact: info@binarybrains.com | Phone: 021-456-789</p>

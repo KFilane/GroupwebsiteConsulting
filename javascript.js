@@ -27,9 +27,34 @@ function submitForm() {
         return;
     } else {
         searchMessage.style.display = 'none';
-        // Redirect to search results page or perform search operation
-        // For demonstration, let's just show the message
-        alert("Perform search operation here");
+      
+         alert("Perform search operation here");
     }
 }
+
+const inputs = document.querySelectorAll(".input");
+ 
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+ 
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+ 
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+ 
+document.getElementById("sendMessageButton").addEventListener("click", function() {
+  document.getElementById("messageNotification").style.display = "block";
+  setTimeout(function() {
+    document.getElementById("messageNotification").style.display = "none";
+  }, 5000);
+});
 

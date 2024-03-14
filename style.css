@@ -96,6 +96,9 @@ body {
 .navbar a:hover {
     color: #00bcd4;
 }
+.social .social-icons{
+  align-content: center;
+}
 
 /*about us*/
 
@@ -113,16 +116,18 @@ h1, h2 {
 
 
 p {
-    color: #666;
+    color: black;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 
 .About {
     max-width: 1000px;
     margin: 0 auto;
+    background-color: white;
 }
 
 /*services*/
@@ -216,34 +221,34 @@ p {
   }
   
   .service a:hover {
-    background-color: #1abc9c; /* Darker blue color on hover */
+    background-color: #1abc9c; 
+
   }
   
   
-  /* clickable image stle*/
   
   
       /* Style the link */
       a {
-          text-decoration: none; /* Remove underline */
-          color: inherit; /* Inherit text color */
-          display: inline-block; /* Make the link a block element */
-          border: 2px solid #555; /* Add border */
-          padding: 5px 10px; /* Add padding */
-          border-radius: 5px; /* Add border radius */
-          transition: all 0.3s; /* Add transition for smooth effect */
+          text-decoration: none; 
+          color: inherit; 
+          display: inline-block; 
+          border: 2px solid #555; 
+          padding: 5px 10px; 
+          border-radius: 5px; 
+          transition: all 0.3s; 
       }
   
       /* Style the link on hover */
       a:hover {
-          background-color: #555; /* Change background color */
-          color: white; /* Change text color */
+          background-color: #555; /
+          color: white; 
       }
   
       /* Style the image inside the link */
       img {
-          vertical-align: middle; /* Align image vertically */
-          margin-right: 5px; /* Add spacing between image and text */
+          vertical-align: middle; 
+          margin-right: 5px; 
       }
   
       /*services forms*/
@@ -283,6 +288,7 @@ p {
 
 
 /*contact form*/
+
 body,
 input,
 textarea {
@@ -496,6 +502,24 @@ textarea.input {
   align-items: center;
   font-size: 0.95rem;
 }
+#sendMessageButton {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+#messageNotification {
+  display: none;
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+ 
 
 .icon {
   width: 28px;
@@ -660,6 +684,7 @@ textarea.input {
   }
 }
 
+
 /*footer styling*/
 footer {
     background-color: #1abc9c;
@@ -730,14 +755,16 @@ footer {
     box-shadow: 10px 16px 42px -23px rgba(0,0,0,0.44);
   }
   
-  h1 {
+  .home h1 {
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     margin-bottom: 1rem;
     font-weight: 400;
+    color: white;
   }
   
-  p {
+  .home p {
     font-size: clamp(0.7rem, 2.5vw, 1rem);
+    color: white;
   }
 
   .search-input {
@@ -821,6 +848,12 @@ footer {
       left: 0;
     }
   }
+
+
+
+
+ 
+  
   
   
   
