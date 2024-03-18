@@ -58,3 +58,6 @@ document.getElementById("sendMessageButton").addEventListener("click", function(
   }, 5000);
 });
 
+document.getElementById("vision").innerText = "Our vision at Binary Brains is to lead the way in technological innovation, driving progress with precision and creativity.";
+document.getElementById("mission").innerText = "Our mission is to empower individuals with the skills and knowledge needed to thrive in a digital world, fostering a culture of continuous learning and growth.";
+
