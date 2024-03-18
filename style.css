@@ -707,16 +707,6 @@ footer {
     height: 30px;
   }
 
-  * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
- 
   
   
   .checkbtn {
@@ -746,14 +736,7 @@ footer {
     align-items: center;
   }
   
-  quote {
-    background: rgba(47, 49, 65, 0.5);
-    color: white;
-    padding: 70px 50px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 10px 16px 42px -23px rgba(0,0,0,0.44);
-  }
+ 
   
   .home h1 {
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
@@ -873,6 +856,21 @@ footer {
 .team-member p {
   font-style: italic;
   color: #666;
+}
+
+
+
+
+.cyber-info {
+    text-align: center; /* Center align the content */
+}
+.cyber-info p {
+    display: inline-block; /* Make the paragraph behave like an inline-block element */
+    text-align: left; /* Reset the text alignment */
+}
+.form, .image {
+    display: inline-block; /* Make both form and image behave like inline-block elements */
+    vertical-align: top; /* Align them vertically at the top */
 }
 
 
