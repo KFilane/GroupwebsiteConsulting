@@ -61,3 +61,34 @@ document.getElementById("sendMessageButton").addEventListener("click", function(
 document.getElementById("vision").innerText = "Our vision at Binary Brains is to lead the way in technological innovation, driving progress with precision and creativity.";
 document.getElementById("mission").innerText = "Our mission is to empower individuals with the skills and knowledge needed to thrive in a digital world, fostering a culture of continuous learning and growth.";
 
+
+function openTab(evt, serviceName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(serviceName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+const tabs = document.querySelectorAll('.tabs input[name="tab"]');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+  tab.addEventListener('change', function() {
+    tabContents.forEach(content => {
+      if (content.id === 'content-' + this.id.slice(4)) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    });
+  });
+});
+

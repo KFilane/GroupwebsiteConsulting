@@ -861,17 +861,124 @@ footer {
 
 
 
-.cyber-info {
-    text-align: center; /* Center align the content */
+.container {
+  display: flex;
+  align-items: center;
 }
-.cyber-info p {
-    display: inline-block; /* Make the paragraph behave like an inline-block element */
-    text-align: left; /* Reset the text alignment */
+
+.text {
+  flex: 1;
+  padding: 20px;
+  
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
-.form, .image {
-    display: inline-block; /* Make both form and image behave like inline-block elements */
-    vertical-align: top; /* Align them vertically at the top */
+
+.image {
+  flex: 1;
+  text-align: right;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
+
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+
+
+.purchase-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; 
+}
+
+.purchase-form h2 {
+  margin-bottom: 10px;
+}
+
+.purchase-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.purchase-form label {
+  font-weight: bold;
+}
+
+.purchase-form input[type="text"],
+.purchase-form input[type="email"],
+.purchase-form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.purchase-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.purchase-form input[type="submit"]:hover {
+  background-color: #1abc9c;
+}
+
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+}
+
+label:hover {
+  background-color: #555;
+}
+
+.tab-content {
+  display: flex;
+}
+
+div[id^="content-"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #555;
+  color: #fff;
+}
+
+input[type="radio"]:checked + label + .tab-content > div {
+  display: block;
+}
+
+
 
 
 
