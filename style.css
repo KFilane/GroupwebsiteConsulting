@@ -716,7 +716,7 @@ footer {
     font-family: "Poppins", sans-serif;
   }
   
- 
+ /*****************INDEX*******************/
   
   
   .checkbtn {
@@ -732,11 +732,11 @@ footer {
   #check {
     display: none;
   }
-  
+
   section {
     min-height: 100vh;
     width: 100%;
-    background: url(laptop.jpg);
+    background: url(working-at-night.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
@@ -754,47 +754,83 @@ footer {
     border-radius: 20px;
     box-shadow: 10px 16px 42px -23px rgba(0,0,0,0.44);
   }
-  
-  .home h1 {
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-    margin-bottom: 1rem;
-    font-weight: 500;
-    color: white;
-  }
-  
-  .home p {
-    font-size: clamp(0.7rem, 2.5vw, 1rem);
-    color: white;
-  }
+  quote {
+  background: rgba(3, 75, 38, 0.5);
+  color: white;
+  padding: 70px 50px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 10px 16px 42px -23px rgba(0,0,0,0.44);
+}
 
-  .search-input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    outline: none;
+.home h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.home h1 p {
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
 }
 
 .search-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #1abc9c;
-    color: #fff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.explore-button{
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.explore-button:hover{
+  background-color: #0056b3;
 }
 
 .search-button:hover {
-    background-color: #000000;
+  background-color: #0056b3;
 }
 
 .search-container {
-    margin-top: 20px;
-    display: flex;
+  display: flex;
 }
+
+@media screen and (max-width: 950px) {
+  .logo {
+      padding-left: 40px;
+  }
   
+  .nav-item {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .checkbtn {
+      display: block;
+  }
+    
   @media screen and (max-width: 950px) {
     
     .logo {
@@ -873,17 +909,4 @@ footer {
 .team-member p {
   font-style: italic;
   color: #666;
-}
-
-
-
-
-
- 
-  
-  
-  
-  
-
-
-
+}}
