@@ -1,124 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src=https://kit.fontawesome.com/64d58efce2.js
-      crossorigin="anonymous"
-    ></script>
- 
- 
-  </head>
- 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Binary Brains - Your solution provider">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body>
   <header>
     <div class="logo">
-      <img src="B-B.png" alt="Your Logo">
+      <img src="B-B.png" alt="Binary Brains Logo">
     </div>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
   </header>
- 
-  <body>
-    <div class="container">
-      <span class="big-circle"></span>
-      <img src="img/shape.png" class="square" alt="" />
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
-          <p class="text">
-            We are at your service, how can we help you?
-          </p>
- 
-          <div class="info">
-            <div class="information">
-              <img src="location.png" class="icon" alt="" />
-              <p>97 Durham Avenue, Salt River, Cape Town 7925</p>
-            </div>
-            <div class="information">
-              <img src="email.png" class="icon" alt="" />
-              <p>info@binarybrains.com</p>
-            </div>
-            <div class="information">
-              <img src="phone.png" class="icon" alt="" />
-              <p>021-456-789</p>
-            </div>
+  <div class="container">
+    <span class="big-circle"></span>
+    <img src="img/shape.png" class="square" alt="Geometric shape">
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">We are at your service, how can we help you?</p>
+        <div class="info">
+          <div class="information">
+            <img src="location.png" class="icon" alt="Location icon">
+            <p>97 Durham Avenue, Salt River, Cape Town 7925</p>
           </div>
- 
-          <div class="social-media">
-            <p>Connect with us :</p>
-            <div class="social-icons">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+          <div class="information">
+            <img src="email.png" class="icon" alt="Email icon">
+            <p>info@binarybrains.com</p>
+          </div>
+          <div class="information">
+            <img src="phone.png" class="icon" alt="Phone icon">
+            <p>021-456-789</p>
           </div>
         </div>
- 
-        <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
- 
-          <form action="index.html" autocomplete="off">
-            <h3 class="title">Contact us</h3>
-            <div class="input-container">
-                <input type="text" name="name" class="input" placeholder="Username" required />
-                <label for="name"></label>
-                <span>Username</span>
-            </div>
-            <div class="input-container">
-                <input type="email" name="email" class="input" placeholder="Email" required />
-                <label for="email"></label>
-                <span>Email</span>
-            </div>
-            <div class="input-container">
-                <input type="tel" name="phone" class="input" placeholder="Phone" required />
-                <label for="phone"></label>
-                <span>Phone</span>
-            </div>
-            <div class="input-container textarea">
-                <textarea name="message" class="input" placeholder="Message" required></textarea>
-                <label for="message"></label>
-                <span>Message</span>
-            </div>
-            <input type="button" value="Send" class="btn" id="sendMessageBtn"
-            onclick
-            ="alert('The message has been sent!!')"/>
+        <div class="social-media">
+          <p>Connect with us:</p>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+        <form action="contact.html" autocomplete="off" method="POST">
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" placeholder="Username" required>
+            <label for="name"></label>
+            <span>Username</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" placeholder="Email" required>
+            <label for="email"></label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" placeholder="Phone" required>
+            <label for="phone"></label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input" placeholder="Message" required></textarea>
+            <label for="message"></label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn">
         </form>
-        </div>
       </div>
     </div>
- 
-    <script src="contact.js"></script>
-    
-    <footer>
-      <div class="social-media">
-          <a href="https://facebook.com" target="_blank"><img src="download.png" alt="Facebook"></a>
-          <a href="https://whatsapp.com" target="_blank"><img src="icone-whatsapp.webp" alt="Whatsapp"></a>
-          <a href="https://linkedin.com" target="_blank"><img src="linkedIn.png" alt="LinkedIn"></a>
-       
-      </div>
-      <p>Contact: info@binarybrains.com | Phone: 021-456-789</p>
-     
-      <p>&copy; 2024 Binary Brains. All Rights Reserved.</p>
-    </footer>
-  </body>
+  </div>
+  <script src="contact.js"></script>
+  <footer>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank" ></a><img src="download.png" alt="Facebook"></a>
+      <a href="https://whatsapp.com" target="_blank" ></a><img src="icone-whatsapp.webp" alt="Whatsapp"></a>
+      <a href="https://linkedin.com" target="_blank" ><img src="linkedIn.png" alt="LinkedIn"></a>
+    </div>
+    <p>Contact: info@binarybrains.com | Phone: 021-456-789</p>
+    <p>&copy; 2024 Binary Brains. All Rights Reserved.</p>
+  </footer>
+</body>
 </html>
-
