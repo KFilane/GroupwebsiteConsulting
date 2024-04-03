@@ -24,10 +24,10 @@
   </header>
 
   <div class="tabs">
-    <button class="tablinks" onclick="openTab(event, 'cybersecurity.html')">Cyber Security</button>
-    <button class="tablinks" onclick="openTab(event, 'network-engineer.html')">Network Engineers</button>
-    <button class="tablinks" onclick="openTab(event, 'Technical-support.html')">Technical Support</button>
-    <button class="tablinks" onclick="openTab(event, 'data-analysis.html')">Data Analyst</button>
+    <button class="tablinks" onclick="openTab('cybersecurity.html')">Cyber Security</button>
+    <button class="tablinks" onclick="openTab('network-engineer.html')">Network Engineers</button>
+    <button class="tablinks" onclick="openTab('Technical-support.html')">Technical Support</button>
+    <button class="tablinks" onclick="openTab('data-analysis.html')">Data Analyst</button>
   </div>
 
   <div class="cyber-info">
@@ -77,6 +77,10 @@
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
     showSlides(); // Initial call
+
+    function openTab(tabName) {
+    window.location.href = tabName;
+  }
   </script>
    </div>
   
