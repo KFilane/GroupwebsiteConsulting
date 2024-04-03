@@ -687,6 +687,7 @@ textarea.input {
 
 /*footer styling*/
 footer {
+  position: fixed;
     background-color: #1abc9c;
     color: #fff;
     text-align: center;
