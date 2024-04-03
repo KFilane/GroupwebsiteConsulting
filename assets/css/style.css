@@ -165,7 +165,7 @@ align-content: center;
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.6);
+  color: white(255, 255, 255, 0.6);
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -252,7 +252,7 @@ align-content: center;
 /*footer styling*/
 footer {
   background-color: #1abc9c;
-  color: #fff;
+  color: black;
   text-align: center;
   padding: 20px;
 }
