@@ -236,6 +236,49 @@
       clickable: true
     }
   });
+/**
+   * Contact
+   */
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Get form input values
+      const name = form.querySelector('input[name="name"]').value.trim();
+      const email = form.querySelector('input[name="email"]').value.trim();
+      const phone = form.querySelector('input[name="phone"]').value.trim();
+      const message = form.querySelector('textarea[name="message"]').value.trim();
+
+      // Validate inputs
+      if (name === '' || email === '' || phone === '' || message === '') {
+          alert('Please fill in all fields.');
+          return;
+      }
+
+      // Validate email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+          alert('Please enter a valid email address.');
+          return;
+      }
+
+      // Validate phone number format
+      const phoneRegex = /^\d{10}$/;
+      if (!phoneRegex.test(phone)) {
+          alert('Please enter a valid phone number (10 digits without spaces or special characters).');
+          return;
+      }
+
+      // If all validations pass, display success message (you can replace alert with any other action)
+      alert('Your message has been sent successfully!');
+
+      // Optional: Reset form fields after submission
+      form.reset();
+  });
+});
+
 
   /**
    * Animation on scroll
