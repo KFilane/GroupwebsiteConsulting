@@ -951,3 +951,22 @@ footer {
   color: #333;
 }
 
+
+/* Slideshow CSS */
+.slideshow-container {
+  max-width: 80%; /* Set a max-width to limit the size of the slideshow */
+  margin: 0 auto; /* Center the slideshow */
+  position: relative;
+  top: 20px;
+  left: 150px;
+  bottom: 20px;
+  overflow: hidden; /* Hide overflow to prevent image overflow */
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+/* Add your existing CSS for the slideshow here */
+

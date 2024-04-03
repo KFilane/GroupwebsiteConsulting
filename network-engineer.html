@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Network Engineering</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -23,41 +23,63 @@
     </nav>
   </header>
 
+  <div class="cyber-info">
+    <h1>What to know about Network Engineering</h1><br>
+</div>
+   <!-- HTML -->
+   <div>
+   <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/resixzed 4.jpg" style="width:70%" height="auto">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/resized 3.jpg" style="width:70%" height="auto">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/resized5667.jpg" style="width:70%" height="auto">
+    </div>
+  </div>
 
+
+  <div class="text">
+       
+    <h2>What is a Network Engineer?</h2><br>
+    <p>Network security encompasses the set of practices, tools, and policies that network engineers use to protect the integrity, confidentiality, and availability of data and resources within a network. The primary goal of network security is to prevent unauthorized access to or misuse of network resources.
+
+        The landscape of network security has evolved significantly over time. Basic perimeter defenses, such as firewalls, are no longer sufficient to protect against modern cyber threats. Network engineers now employ a variety of tools and techniques, such as intrusion detection systems (IDS), encryption, and multi-factor authentication, to secure networks against unauthorized access and data breaches.
+        
+        In today's interconnected world, where cyber threats are constantly evolving, network security is a critical aspect of any organization's IT infrastructure. It is essential for ensuring the secure and reliable operation of networks, protecting sensitive information, and maintaining the trust of customers and stakeholders.
+
+      </p>
+</div>
   
-  <div class="container">
-    <div class="text">
-        <div class="cyber-info">
-            <h1>What to know about Network Engineering</h1><br>
-        </div>
-        <h2>What is a Network Engineer?</h2><br>
-        <p>Network security encompasses the set of practices, tools, and policies that network engineers use to protect the integrity, confidentiality, and availability of data and resources within a network. The primary goal of network security is to prevent unauthorized access to or misuse of network resources.
-
-            The landscape of network security has evolved significantly over time. Basic perimeter defenses, such as firewalls, are no longer sufficient to protect against modern cyber threats. Network engineers now employ a variety of tools and techniques, such as intrusion detection systems (IDS), encryption, and multi-factor authentication, to secure networks against unauthorized access and data breaches.
-            
-            In today's interconnected world, where cyber threats are constantly evolving, network security is a critical aspect of any organization's IT infrastructure. It is essential for ensuring the secure and reliable operation of networks, protecting sensitive information, and maintaining the trust of customers and stakeholders.
-
-          </p>
-    </div>
-    <div class="image">
-        <img src="images/cyberimage.jfif">
-    </div>
-</div>
-<div class="purchase-form">
-  <h2>Purchase Form</h2>
-  <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br>
-      <label for="quantity">Quantity:</label><br>
-      <input type="number" id="quantity" name="quantity" min="1"><br>
-      <input type="submit" value="Submit">
-  </form>
-</div>
-
-
-
+  <!-- JavaScript -->
+  <script>
+    var slideIndex = 0;
+  
+    function showSlides() {
+      var slides = document.getElementsByClassName("mySlides");
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    showSlides(); // Initial call
+  </script>
+   </div>
+  
+  
+   <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+    <a href="contact.html" class="btn">Contact</a>
+  </div>
+  
 
 
 
