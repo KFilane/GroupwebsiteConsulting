@@ -103,7 +103,7 @@ body {
 /*about us*/
 
 #about-us {
-    background-color: #f8f8f8;
+    background-color: white;
     padding: 20px;
     text-align: center;
 }
@@ -121,6 +121,10 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
     justify-content: center;
+  
+}
+p strong {
+font-weight: 800px;
 }
 
 
@@ -128,7 +132,9 @@ p {
     max-width: 1000px;
     margin: 0 auto;
     background-color: white;
+
 }
+
 
 /*services*/
 
@@ -907,3 +913,41 @@ footer {
 .contact-section .btn:hover {
   background-color: #1abc9c;
 }
+
+
+
+
+.About {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mission-vision-container {
+  max-width: 1000px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission,
+.vision {
+  flex-basis: 48%;
+}
+
+/* Additional styles for better visual separation (optional) */
+.mission,
+.vision {
+  border: 5px solid #1abc9c;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.mission h2,
+.vision h2 {
+  color: #333;
+}
+
