@@ -23,32 +23,59 @@
     </nav>
   </header>
 
+  <div class="cyber-info">
+    <h1>What to know about Cyber Security</h1><br>
+</div>
+   <!-- HTML -->
+   <div>
+   <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/resixzed 4.jpg" style="width:70%" height="auto">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/resized 3.jpg" style="width:70%" height="auto">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/resized5667.jpg" style="width:70%" height="auto">
+    </div>
+  </div>
 
+
+  <div class="text">
+       
+    <h2>What is Cyber Security?</h2><br>
+    <p>Cybersecurity refers to the collection of IT resources, practices, and guidelines that businesses use to protect their systems, networks, and data from unauthorized access and cyber threats. The primary goal of cybersecurity is to defend private and sensitive information from intrusions that typically attempt to obtain it for illegal purposes, financial extortion, or just to disrupt operations.
+      The days of using simple-to-install antivirus software to safeguard your gadgets are long gone. Although the use of cloud services to store sensitive data has grown recently, there are still gaps in security regulations. Cybersecurity is now required, not an option.</p>
+      </p>
+</div>
   
-  <div class="container">
-    <div class="text">
-        <div class="cyber-info">
-            <h1>What to know about Cyber Security</h1><br>
-        </div>
-        <h2>What is Cyber Security?</h2><br>
-        <p>Cybersecurity refers to the collection of IT resources, practices, and guidelines that businesses use to protect their systems, networks, and data from unauthorized access and cyber threats. The primary goal of cybersecurity is to defend private and sensitive information from intrusions that typically attempt to obtain it for illegal purposes, financial extortion, or just to disrupt operations.
-            The days of using simple-to-install antivirus software to safeguard your gadgets are long gone. Although the use of cloud services to store sensitive data has grown recently, there are still gaps in security regulations. Cybersecurity is now required, not an option.</p>
-    </div>
-    <div class="image">
-        <img src="images/cyberimage.jfif">
-    </div>
-</div>
-<div class="contact-section">
-  <h2>Contact Us</h2>
-  <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
-  <a href="contact.html" class="btn">Contact</a>
-</div>
-
-
-
-
-
-
+  <!-- JavaScript -->
+  <script>
+    var slideIndex = 0;
+  
+    function showSlides() {
+      var slides = document.getElementsByClassName("mySlides");
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    showSlides(); // Initial call
+  </script>
+   </div>
+  
+  
+   <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+    <a href="contact.html" class="btn">Contact</a>
+  </div>
+  
   <footer>
     <div class="social-media">
       <a href="https://facebook.com" target="_blank"><img src="images/download.png" alt="Facebook"></a>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Technical Support </title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -24,41 +24,63 @@
   </header>
 
 
+  <div class="cyber-info">
+    <h1>What to know about Technical Support.</h1><br>
+</div>
+   <!-- HTML -->
+   <div>
+   <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/resixzed 4.jpg" style="width:70%" height="auto">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/resized 3.jpg" style="width:70%" height="auto">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/resized5667.jpg" style="width:70%" height="auto">
+    </div>
+  </div>
+
+
+  <div class="text">
+       
+    <h2>What is a Technical Support?</h2><br>
+    <p>Technical support refers to the range of services provided by IT professionals to assist users with resolving technical issues related to hardware, software, or other IT services. The primary goal of technical support is to ensure that users can effectively use and troubleshoot their technology to minimize downtime and maximize productivity.
+
+      Gone are the days when technical support simply involved providing basic troubleshooting instructions over the phone. Today, technical support teams use a variety of tools and techniques, such as remote desktop support, diagnostic software, and knowledge bases, to quickly identify and resolve issues.
+      
+      In the modern era of complex IT environments and constantly evolving technology, technical support plays a crucial role in ensuring that users can make the most of their technology investments. By providing timely and effective support, technical support professionals help organizations maintain their operations and ensure a positive user experience.
+
+      </p>
+</div>
   
-  <div class="container">
-    <div class="text">
-        <div class="cyber-info">
-            <h1>What to know about Technican Support</h1><br>
-        </div>
-        <h2>What is Technical Support?</h2><br>
-        <p>Technical support refers to the range of services provided by IT professionals to assist users with resolving technical issues related to hardware, software, or other IT services. The primary goal of technical support is to ensure that users can effectively use and troubleshoot their technology to minimize downtime and maximize productivity.
-
-            Gone are the days when technical support simply involved providing basic troubleshooting instructions over the phone. Today, technical support teams use a variety of tools and techniques, such as remote desktop support, diagnostic software, and knowledge bases, to quickly identify and resolve issues.
-            
-            In the modern era of complex IT environments and constantly evolving technology, technical support plays a crucial role in ensuring that users can make the most of their technology investments. By providing timely and effective support, technical support professionals help organizations maintain their operations and ensure a positive user experience.
-            
-          </p>
-    </div>
-    <div class="image">
-        <img src="images/cyberimage.jfif">
-    </div>
-</div>
-<div class="purchase-form">
-  <h2>Purchase Form</h2>
-  <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br>
-      <label for="quantity">Quantity:</label><br>
-      <input type="number" id="quantity" name="quantity" min="1"><br>
-      <input type="submit" value="Submit">
-  </form>
-</div>
-
-
-
-
+  <!-- JavaScript -->
+  <script>
+    var slideIndex = 0;
+  
+    function showSlides() {
+      var slides = document.getElementsByClassName("mySlides");
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    showSlides(); // Initial call
+  </script>
+   </div>
+  
+  
+   <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+    <a href="contact.html" class="btn">Contact</a>
+  </div>
+  
 
 
   <footer>

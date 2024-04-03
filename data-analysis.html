@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data Analyst</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,38 +25,60 @@
 
 
   
-  <div class="container">
-    <div class="text">
-        <div class="cyber-info">
-            <h1>What to know about a Data Analyst</h1><br>
-        </div>
-        <h2>What is a Data Analyst?</h2><br>
-        <p>Data security encompasses the range of strategies, tools, and protocols that organizations employ to safeguard their data assets from unauthorized access and cyber threats. The main objective of data security is to protect sensitive information from breaches that could lead to data theft, financial losses, or disruption of operations.
-
-          Gone are the days when basic antivirus software was sufficient to protect your devices. While the use of cloud services for data storage has become more prevalent, there are still gaps in security practices and regulations. Data security is now a necessity, not a choice, as organizations must ensure the confidentiality, integrity, and availability of their data assets.
-
-          </p>
-    </div>
-    <div class="image">
-        <img src="images/cyberimage.jfif">
-    </div>
+  <div class="cyber-info">
+    <h1>What to know about Data Analysis</h1><br>
 </div>
-<div class="purchase-form">
-  <h2>Purchase Form</h2>
-  <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br>
-      <label for="quantity">Quantity:</label><br>
-      <input type="number" id="quantity" name="quantity" min="1"><br>
-      <input type="submit" value="Submit">
-  </form>
+   <!-- HTML -->
+   <div>
+   <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/resixzed 4.jpg" style="width:70%" height="auto">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/resized 3.jpg" style="width:70%" height="auto">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/resized5667.jpg" style="width:70%" height="auto">
+    </div>
+  </div>
+
+
+  <div class="text">
+       
+    <h2>What is a data Analysis?</h2><br>
+    <p>Data security encompasses the range of strategies, tools, and protocols that organizations employ to safeguard their data assets from unauthorized access and cyber threats. The main objective of data security is to protect sensitive information from breaches that could lead to data theft, financial losses, or disruption of operations.
+
+      Gone are the days when basic antivirus software was sufficient to protect your devices. While the use of cloud services for data storage has become more prevalent, there are still gaps in security practices and regulations. Data security is now a necessity, not a choice, as organizations must ensure the confidentiality, integrity, and availability of their data assets.
+      </p>
 </div>
-
-
-
-
+  
+  <!-- JavaScript -->
+  <script>
+    var slideIndex = 0;
+  
+    function showSlides() {
+      var slides = document.getElementsByClassName("mySlides");
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    showSlides(); // Initial call
+  </script>
+   </div>
+  
+  
+   <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+    <a href="contact.html" class="btn">Contact</a>
+  </div>
+  
 
 
   <footer>
