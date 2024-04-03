@@ -26,23 +26,15 @@
 <h1>What we offer</h1><br>
 
 <div class="tabs">
-  <button class="tablinks" onclick="openTab(event, 'cyberSecurity')">Cyber Security</button>
-  <button class="tablinks" onclick="openTab(event, 'networkEngineers')">Network Engineers</button>
-  <button class="tablinks" onclick="openTab(event, 'technicalSupport')">Technical Support</button>
-  <button class="tablinks" onclick="openTab(event, 'dataAnalyst')">Data Analyst</button>
+  <button class="tablinks" onclick="openTab('cybersecurity.html')">Cyber Security</button>
+  <button class="tablinks" onclick="openTab('network-engineer.html')">Network Engineers</button>
+  <button class="tablinks" onclick="openTab('Technical-support.html')">Technical Support</button>
+  <button class="tablinks" onclick="openTab('data-analysis.html')">Data Analyst</button>
 </div>
 
 <div class="service-container">
-  <div class="service">
-    <a href="software.html">
-      <img src="images/software.jpg" alt="Software Engineers">
-      <h3>SOFTWARE ENGINEERS</h3>
-      <p>Our team of skilled software engineers specializes in developing custom solutions tailored to your specific requirements.</p>
-    </a>
-    <a href="#" class="btn">Read more</a>
-  </div>
-  <div class="service">
-    <a href="cyber.html">
+  <div class="service" id="cyber">
+    <a href="cybersecurity.html">
       <img src="images/cyberimage.jfif" alt="Cyber Security Specialists">
       <h3>CYBER SECURITY</h3>
       <p>Protect your digital assets with our advanced cybersecurity services. Our experienced security engineers conduct thorough assessments and implement robust defenses.</p>
@@ -50,39 +42,38 @@
     <a href="cybersecurity.html" class="btn">Read more</a>
   </div>
 
-  <div class="service">
-    <a href="data.html">
-      <img src="images/DATA123.jpg" alt="Data Analyst">
-      <h3>DATA ANALYST</h3>
-      <p>Unlock insights from your data with our skilled data analysts. We analyze and interpret data to help you make informed decisions.</p>
-    </a>
-    <a href="data-analysis.html" class="btn">Read more</a>
-  </div>
-
-  <div class="service">
-    <a href="network.html">
+  <div class="service" id="network">
+    <a href="network-engineer.html">
       <img src="images/NTW2.jpg" alt="Networking">
       <h3>NETWORKING</h3>
       <p>Get technical support from our experts. We provide assistance to ensure smooth operation and resolution of technical issues.</p>
     </a>
     <a href="network-engineer.html" class="btn">Read more</a>
   </div>
+
+  <div class="service" id="technical-support">
+    <a href="Technical-support.html">
+      <img src="images/technical.jpg" alt="Technical Support">
+      <h3>TECHNICAL SUPPORT</h3>
+      <p>Our technical support team is available round the clock to assist you with any technical issues you may encounter.</p>
+    </a>
+    <a href="Technical-support.html" class="btn">Read more</a>
+  </div>
+
+  <div class="service" id="data">
+    <a href="data-analysis.html">
+      <img src="images/DATA123.jpg" alt="Data Analyst">
+      <h3>DATA ANALYST</h3>
+      <p>Unlock insights from your data with our skilled data analysts. We analyze and interpret data to help you make informed decisions.</p>
+    </a>
+    <a href="data-analysis.html" class="btn">Read more</a>
+  </div>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const services = document.querySelectorAll('.service');
-
-    services.forEach(service => {
-      const readMoreBtn = service.querySelector('.btn');
-      const paragraph = service.querySelector('p');
-
-      readMoreBtn.addEventListener('click', function() {
-        paragraph.classList.toggle('show');
-        this.textContent = paragraph.classList.contains('show') ? 'Read less' : 'Read more';
-      });
-    });
-  });
+  function openTab(tabName) {
+    window.location.href = tabName;
+  }
 </script>
 
 <div class="contact-section">
@@ -93,9 +84,9 @@
 
 <footer>
   <div class="social-media">
-    <a href="https://facebook.com" target="_blank"><img src="images/download.png" alt="Facebook"></a>
-    <a href="https://whatsapp.com" target="_blank"><img src="images/icone-whatsapp.webp" alt="Whatsapp"></a>
-    <a href="https://linkedin.com" target="_blank"><img src="images/linkedIn.png" alt="LinkedIn"></a>
+    <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+    <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
   </div>
   <p>Contact: info@binarybrains.com | Phone: 021-456-789</p>
   <p>&copy; 2024 Binary Brains. All Rights Reserved.</p>
