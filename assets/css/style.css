@@ -149,7 +149,7 @@ align-content: center;
 #hero {
   width: 100%;
   height: 80vh;
-  background: #00F6C1;
+  background: linear-gradient(to bottom, #55efc4, #f9f9f9);
 }
 
 #hero .container {
