@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Analyst</title>
+  <title>Cyber Security</title>
   <link href="assets/img/B-B.png" rel="icon">
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
@@ -51,14 +51,42 @@
 
   <div class="text">
        
-    <h2>What is a Cyber Security</h2><br>
+    <h2>What is a <span>Cyber Security</span></h2><br>
     <p>Data security encompasses the range of strategies, tools, and protocols that organizations employ to safeguard their data assets from unauthorized access and cyber threats. The main objective of data security is to protect sensitive information from breaches that could lead to data theft, financial losses, or disruption of operations.
 
       Gone are the days when basic antivirus software was sufficient to protect your devices. While the use of cloud services for data storage has become more prevalent, there are still gaps in security practices and regulations. Data security is now a necessity, not a choice, as organizations must ensure the confidentiality, integrity, and availability of their data assets.
       </p>
 </div>
-  
-  
+
+<div class="contain">
+  <h1>Make your Request <span>NOW</span> !!!!</h1>
+  <div class="service2">
+      <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+      <h2>Vulnerability Assessment and Penetration Testing</h2>
+      <p>R999/month</p>
+      <button onclick="purchase('Vulnerability Assessment and Penetration Testing')">Request</button>
+  </div>
+  <div class="service2">
+      <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+      <h2>Training and Awareness Programs</h2>
+      <p>R2999/month</p>
+      <button onclick="purchase('Training and Awareness Programs')">Request</button>
+  </div>
+  <div class="service2">
+      <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+      <h2>Security Consulting and Advisory Services</h2>
+      <p>R1800/month</p>
+      <button onclick="purchase('Security Consulting and Advisory Services')">Request</button>
+  </div>
+  <div class="service2">
+      <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+      <h2>Incident Response and Forensics</h2>
+      <p>R7999/month</p>
+      <button onclick="purchase('Incident Response and Forensics')">Request</button>
+  </div>
+</div>
+
+
   <script>
     var slideIndex = 0;
   
@@ -79,6 +107,30 @@
     function openTab(tabName) {
     window.location.href = tabName;
   }
+  function purchase(service2) {
+    let message;
+    // Check the service name and set the message accordingly
+    switch(service2) {
+        case 'Vulnerability Assessment and Penetration Testing':
+            message = "You have requested Vulnerability Assessment and Penetration Testing. Our team will contact you shortly.";
+            break;
+        case 'Training and Awareness Programs':
+            message = "You have requested Training and Awareness Programs. Our team will contact you shortly.";
+            break;
+        case 'Security Consulting and Advisory Services':
+            message = "You have requested Security Consulting and Advisory Services. Our team will contact you shortly.";
+            break;
+        case 'Incident Response and Forensics':
+            message = "You have requested Incident Response and Forensics. Our team will contact you shortly.";
+            break;
+        // default:
+        //     message = "You have requested a service. Our team will contact you shortly.";
+    }
+    // Display the message in an alert
+    alert(message);
+    // You can add more functionality here such as redirecting to a confirmation page or sending an email
+}
+
 
    
   </script>
