@@ -9,7 +9,6 @@
 body {
     margin: 0;
     padding: 0;
-    color:#333;
 }
 
 body {
@@ -1090,7 +1089,7 @@ footer {
   
   .Review-section h2 {
     color: black;
-    font-size: 24px; /* Increase font size for the heading */
+    font-size: 24px;
     margin-bottom: 30px;
   }
   
@@ -1109,5 +1108,65 @@ footer {
 
     background-color: #1abc9c;
   }
+
+  /* --========Billing Cyber security=======------- */
+
+
+.contain {
+    max-width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+.contain h1{
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 50px;
+
+}
+
+.contain h1 span{
+  color: red;
+}
+
+.service2 {
+  background: linear-gradient(to bottom, #55efc4, #f9f9f9);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    display: inline-block;
+    width: 40%;
+    flex: 0 0 40%;
+}
+
+.service2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.service2 h1 {
+    color: #333;
+}
+
+.service2 h2 {
+    color: #666;
+}
+
+.service2 button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service2 button:hover {
+    background-color: #454ea0;
+}
+
 
 
