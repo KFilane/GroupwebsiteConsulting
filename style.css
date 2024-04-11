@@ -42,6 +42,8 @@ body {
     color: #fff;
     margin: 0 15px;
     font-size: 16px;
+    background-color: #000000;
+    border: none;
   }
   
   section {
@@ -195,10 +197,12 @@ font-weight: 800px;
   }
   
   .service img {
-    max-width: 100%;
     border-radius: 5px;
-    margin-bottom: 15px;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
+    height:200px;
+    width: 200px;
+    padding-left: 15px;
+    padding-top: 10px;
   }
   
   .service img:hover {
@@ -275,8 +279,8 @@ font-weight: 800px;
     }
 
     input[type="submit"] {
-        background-color: #1abc9c;
-        color: white;
+        background-color: white;
+        color: black;
         padding: 10px 15px;
         border: none;
         cursor: pointer;
@@ -284,6 +288,7 @@ font-weight: 800px;
 
     input[type="submit"]:hover {
         background-color: black;
+        color: white;
     }
 
 
@@ -537,19 +542,15 @@ textarea.input {
 
 .social-icons {
   display: flex;
-  margin-top: 0.5rem;
+  justify-content: center;
 }
 
 .social-icons a {
-  width: 35px;
-  height: 35px;
-  border-radius: 5px;
-  background: linear-gradient(45deg, #1f2020, #149279);
-  color: #fff;
-  text-align: center;
-  line-height: 35px;
-  margin-right: 0.5rem;
-  transition: 0.3s;
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  border-radius: 50%;
 }
 
 .social-icons a:hover {
@@ -695,17 +696,31 @@ footer {
   }
   
   .social-media {
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
   
   .social-media a {
-    display: inline-block;
-    margin-right: 15px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
   }
   
-  .social-media img {
-    width: 30px;
-    height: 30px;
+  .social-media a i {
+    font-size: 2em;
+    color:black;
+    opacity: 0.9;
+  }
+  /*===Hover Effect On Social Icons===*/
+  .social-media a:hover {
+    background-color: black;
+    transition: 0.5s;
+  }
+  .social-media a:hover i {
+    color: #fff;
+    transition: 0.5s;
   }
 
   * {
