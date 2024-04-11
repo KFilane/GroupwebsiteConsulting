@@ -9,6 +9,7 @@
 body {
     margin: 0;
     padding: 0;
+    color:#333;
 }
 
 body {
@@ -1075,10 +1076,4 @@ footer {
 
 
 
-  /* Optional: CSS styles for the animated title */
-  #animated-title {
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 50px;
-  }
+  
