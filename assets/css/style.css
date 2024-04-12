@@ -23,7 +23,7 @@ a {
   display: inline-block; 
   border: 2px solid #555; 
   padding: 5px 10px; 
-  border-radius: 5px; 
+  border-radius: 10px; 
   transition: all 0.3s; 
 }
 
@@ -253,23 +253,37 @@ align-content: center;
 /*footer styling*/
 footer {
   background-color: #1abc9c;
-  color: black;
+  color: #fff;
   text-align: center;
   padding: 20px;
 }
 
 .social-media {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .social-media a {
-  display: inline-block;
-  margin-right: 15px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
 }
 
-.social-media img {
-  width: 30px;
-  height: 30px;
+.social-media a i {
+  font-size: 2em;
+  color:black;
+  opacity: 0.9;
+}
+/*===Hover Effect On Social Icons===*/
+.social-media a:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+.social-media a:hover i {
+  color: #fff;
+  transition: 0.5s;
 }
 
 * {
