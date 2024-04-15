@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="style.css"> 
+  <style>
+    /* CSS styles */
+    /* Payment container */
+    .payment-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .payment-container h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .payment-method {
+      margin-bottom: 20px;
+    }
+
+    .payment-method label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .payment-method select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .eft-info,
+    .mastercard-info {
+      margin-bottom: 20px;
+    }
+
+    .eft-info p,
+    .mastercard-info p {
+      margin: 5px 0;
+    }
+
+    button[type="submit"] {
+      background-color: rgba(127, 255, 127, 0.753);
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: rgba(118, 253, 201, 0.712);
+    }
+
+    .payment-details-form {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      margin-right: 10px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="number"] {
+      width: 200px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-group input[type="text"]#expiry-date,
+    .form-group input[type="text"]#cvv {
+      width: 100px; /* Adjust width as needed */
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .flex .form-group {
+      width: 48%; /* Adjust width as needed */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/B-B.png" alt="Your Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="payment-container">
+    <h1>Payment Information</h1>
+    <form id="payment-form">
+      <div class="payment-method">
+        <label for="payment-method">Select Payment Method:</label>
+        <select id="payment-method" name="payment-method">
+          <option value="eft">Electronic Funds Transfer (EFT)</option>
+          <option value="mastercard">Mastercard</option>
+        </select>
+      </div>
+      <div class="eft-info">
+        <p>Please transfer the total amount to the following bank account:</p>
+        <p>Bank Name: Nedbank</p>
+        <p>Account Number: 1619423756</p>
+        <p>Reference: B.BRAINS</p>
+      </div>
+      <div class="payment-details-form" id="mastercard-details-form">
+        <div class="form-group">
+          <label for="cardholder">Cardholder Name:</label>
+          <input type="text" id="cardholder" name="cardholder" required>
+        </div>
+        <div class="form-group">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number" required>
+        </div>
+        <div class="flex">
+          <div class="form-group">
+            <label for="expiry-date">Expiration Date:</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YYYY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+          </div>
+        </div>
+      </div>
+      <button type="submit">Submit Payment</button>
+    </form>
+  </div>
+
+
+
+  <script>
+    document.getElementById('payment-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+      
+      // Code to handle form submission, e.g., validate payment details
+      
+      // For demonstration purposes, you can redirect the user to a thank you page
+      window.location.href = "thankyou.html";
+    });
+
+    document.getElementById('payment-method').addEventListener('change', function() {
+      // Show/hide payment method information based on selection
+      var paymentMethod = this.value;
+      var eftInfo = document.querySelector('.eft-info');
+      var mastercardInfo = document.querySelector('#mastercard-details-form');
+
+      if (paymentMethod === 'eft') {
+        eftInfo.style.display = 'block';
+        mastercardInfo.style.display = 'none';
+      } else if (paymentMethod === 'mastercard') {
+        eftInfo.style.display = 'none';
+        mastercardInfo.style.display = 'block';
+      }
+    });
+  </script>
+
+</body>
+<footer>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>Contact: info@binarybrains.com | Phone: 021-456-789</p>
+    <p>&copy; 2024 Binary Brains. All Rights Reserved.</p>
+  </footer>
+</html>

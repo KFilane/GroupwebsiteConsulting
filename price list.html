@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About us</title>
+  <link href="assets/img/B-B.png" rel="icon">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      list-style: none;
+    }
+    .header {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+ 
+    /* body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
+
+    .pricing-table {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: min(1600px, 100%);
+      margin: auto;
+    }
+
+    .pricing-container {
+      max-width: 360px;
+      margin: 20px 10px;
+      box-sizing:border-box;
+      border-radius: 15px;
+      background-color:azure;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pricing-card {
+     
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+      color: #2d2d2d;
+      transition: .3s linear;
+    }
+
+    .pricing-card-header {
+      height: 70px;
+      background-color: #1abc9c;
+      display: inline-block;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 20px;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: .4s linear;
+    }
+
+   
+    .pricing-card li {
+      font-size: 14px;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+
+    .payment-button {
+      align-items: end;
+      display: inline-block;
+      margin-top: 50px;
+      border: 2px solid #1abc9c;
+      color: #1abc9c;
+      padding: 18px 40px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: .3s linear;
+    }
+
+    /* #2{
+        margin-top: 60px;
+    } */
+
+
+    .payment-button:hover {
+      background-color: #1abc9c;
+      color: white;
+    }
+
+    /* .payment-buttons {
+      display: flex;
+      justify-content: center;
+      text-align:center;
+      
+    } */
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+          <img src="images/B-B.png" alt="Your Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+  <div class="pricing-table">
+    <div class="pricing-container">
+      <div class="pricing-card">
+        <h3 class="pricing-card-header">network installation and configuration</h3>
+        <ul>
+          <li>Small to medium-sized network setup:<br><strong>R15,000 - R150,000</strong></li>
+          <li>large enterprise network setup:<br><strong>R150,000 - R1,500,000+</strong></li>
+          <li>Configuration of additional network devices (per device):<br><strong>R1,500 - R7,500</strong></li>
+        </ul>
+        <div class="payment-buttons">
+            <a href="payment.html" class="payment-button">payment</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card">
+        <h3 class="pricing-card-header">Networks Troubleshooting And Maintenance</h3>
+        <ul>
+          <li>Hourly rate for troubleshooting and maintenance:<br><strong>R750 - R3,000 per hour</strong></li><br><br>
+          <li>Monthly or annual maintenance contracts:<br><strong>R15,000 - R150,000 </strong></li>
+        </ul>
+        <div class="payment-buttons">
+          <a href="payment.html" class="payment-button">payment</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card">
+        <h3 class="pricing-card-header">Network security services</h3>
+        <ul>
+          <li>Firewall setup and configuration:<br><strong>R15,000 - R75,000</strong></li>
+          <li>Intrusion detection and prevention systems:<br><strong> R30,000 - R150,000+</strong></li>
+          <li>Security audits and assessments:<br><strong> R15,000 - R75,000</strong></li>
+        </ul>
+        <div class="payment-buttons">
+            <a href="payment.html" class="payment-button">payment</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-container">
+
+      <div class="pricing-card">
+        <h3 class="pricing-card-header">Network upgrades and expansion</h3>
+        <ul>
+          <li>Equipment upgrades (e.g., switches, routers):<br><strong> R15,000 - R150,000+</strong></li>
+          <li>Network expansion projects:<br><strong>R75,000 - R750,000+</strong></li>
+          <li>Implementation of new technologies <br><strong>R15,000-30,000</strong></li>
+        </ul>
+        <div class="payment-buttons">
+            <a href="payment.html" class="payment-button">payment</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<footer>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>Contact: info@binarybrains.com | Phone: 021-456-789</p>
+    <p>&copy; 2024 Binary Brains. All Rights Reserved.</p>
+  </footer>
+</html>
