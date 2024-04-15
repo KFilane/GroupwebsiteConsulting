@@ -1184,4 +1184,10 @@ footer {
 }
 
 
+@media screen and (max-width: 768px) {
+  .service2 {
+    width: 100%; 
+  }
+}
+
 

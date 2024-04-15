@@ -58,25 +58,82 @@
       </p>
 </div>
 
-  <script>
-    var slideIndex = 0;
-  
-    function showSlides() {
-      var slides = document.getElementsByClassName("mySlides");
-      for (var i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 2000); 
-    }
-    showSlides(); 
+<div class="contain">
+  <h1>Make your Request <span>NOW</span> !!!!</h1>
+  <div class="service2">
+      <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+      <h2>Data Strategy and Planning</h2>
+      <p>R999/month</p>
+      <button onclick="purchase1('Vulnerability Assessment and Penetration Testing')">Request</button>
+  </div>
+  <div class="service2">
+      <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+      <h2>Data Processing and Analysis</h2>
+      <p>R2999/month</p>
+      <button onclick="purchase1('Training and Awareness Programs')">Request</button>
+  </div>
+  <div class="service2">
+      <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+      <h2>Data Visualization and Reporting</h2>
+      <p>R1800/month</p>
+      <button onclick="purchase1('Security Consulting and Advisory Services')">Request</button>
+  </div>
+  <div class="service2">
+      <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+      <h2>Data Governance and Optimazation</h2>
+      <p>R7999/month</p>
+      <button onclick="purchase1('Incident Response and Forensics')">Request</button>
+  </div>
+</div>
+
 
   
-  </script>
+<script>
+  var slideIndex = 0;
+
+  function showSlides() {
+    var slides = document.getElementsByClassName("mySlides");
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); 
+  }
+  showSlides(); 
+  
+  function openTab(tabName) {
+  window.location.href = tabName;
+}
+
+  function purchase1(service2) {
+  let message;
+  // Check the service name and set the message accordingly
+  switch(service2) {
+      case 'Data Strategy and Planning':
+          message = "You have requested Data Strategy and Planning. Our team will contact you shortly.";
+          break;
+      case 'Data Processing and Analysis':
+          message = "You have requested Data Processing and Analysis. Our team will contact you shortly.";
+          break;
+      case 'Data Visualization and Reporting':
+          message = "You have requested Data Visualisation and Reporting. Our team will contact you shortly.";
+          break;
+      case 'Data Governance and Optimazation':
+          message = "You have requested Data Governance and Optimazation. Our team will contact you shortly.";
+          break;
+      default:
+          message = "You have requested a service. Our team will contact you shortly.";
+  }
+  // Display the message in an alert
+  alert(message);
+  // You can add more functionality here such as redirecting to a confirmation page or sending an email
+}
+
+</script>
    </div>
  
   
