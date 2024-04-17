@@ -21,10 +21,11 @@ a {
   text-decoration: none; 
   color: inherit; 
   display: inline-block; 
-  border: 2px solid #555; 
+  border: none; 
   padding: 5px 10px; 
-  border-radius: 10px; 
-  transition: all 0.3s; 
+  transition: all 0.3s;
+  background-color: black;
+  border-radius: 5px;
 }
 
 /* Style the link on hover */
