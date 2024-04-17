@@ -59,11 +59,33 @@
 
       </p>
 </div>
-  
+
+<div class="contain">
+  <h1>Make your Request <span>NOW</span> !!!!</h1>
+  <div class="service2">
+      <img src="Technical.jpg" alt="Technical-support">
+      <h2>Troubleshooting</h2>
+      <button onclick="purchase('Troubleshooting')">Price</button>
+  </div>
+  <div class="service2">
+      <img src="Technical.jpg" alt="Technical-support">
+      <h2>Repair and Maintenance</h2>
+      <button onclick="purchase('Repair and Maintenance')">Price</button>
+  </div>
+  <div class="service2">
+      <img src="Technical.jpg" alt="Technical-support">
+      <h2>Installation and Setup</h2>
+      <button onclick="purchase('Installation and Setup')">Price</button>
+  </div>
+  <div class="service2">
+      <img src="Technical.jpg" alt="Technical-support">
+      <h2>Remote assistance</h2>
+      <button onclick="purchase('Remote assistance')">Price</button>
+  </div>
+</div>
 
   <script>
     var slideIndex = 0;
-  
     function showSlides() {
       var slides = document.getElementsByClassName("mySlides");
       for (var i = 0; i < slides.length; i++) {
@@ -81,8 +103,30 @@
     function openTab(tabName) {
     window.location.href = tabName;
   }
-
-    
+  function purchase(service) {
+    let message;
+    // Check the service name and set the message accordingly
+    switch(service) {
+        case 'Troubleshooting':
+            message = "You have requested troubleshooting. Our team will contact you shortly.";
+            break;
+        case 'Repair and Maintenance':
+            message = "You have requested repair and maintenance. Our team will contact you shortly.";
+            break;
+        case 'Installation and setup':
+            message = "You have requested Installation and setup. Our team will contact you shortly.";
+            break;
+        case 'Remote assistance':
+            message = "You have requested remote assistance. Our team will contact you shortly.";
+            break;
+        // default:
+        //     message = "You have requested a service. Our team will contact you shortly.";
+    }
+    // Display the message in an alert
+    alert(message);
+    // You can add more functionality here such as redirecting to a confirmation page or sending an email
+    window.location.href = "Te-prices.html";
+}
   </script>
 
    </div>
